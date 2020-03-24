@@ -31,8 +31,9 @@ h1 {
 
 input {
   margin-top: 10px;
-  border-color: darkolivegreen;
   padding: 3px;
+  height: 22px;
+  font-size: medium;
 }
 
 .addOption {
