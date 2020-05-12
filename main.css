@@ -6,9 +6,9 @@ body {
   align-items: center;
   margin-top: 150px;
   margin-bottom: 250px;
- /* background: linear-gradient(to bottom, #FFCD60 0%, #D34848 100%); */
   background: url(./images/background-image.jpg) no-repeat center center fixed #f6ecbf;
   background-size: cover;
+  height: 100%;
 
   }
 
@@ -41,10 +41,10 @@ input {
 
 .addOption {
   margin-top: 10px;
-  background-color: #bbff99;
-  border-radius: 50%;
-  color: indigo;
-  font-size: 17px;
+  background-color: #4baea0;
+  border-radius: 12px; 
+  color: #35495e;
+  font-size: 20px;
   font-weight: bold;
   padding: 5px;
   border-color: darkred;
@@ -52,30 +52,32 @@ input {
 
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 .addOption:hover {
   background-color: #4f9da6;
-  color: white;
+  color: #fdfdf6;
 }
 
 .submit {
-  background-color: #bbff99;
-  border-radius: 50%;
-  border-color: darkred;
-  color: indigo;
-  font-size: 28px;
+  background-color: #4baea0;
+  border-radius: 12px;
+  border-color: #9d0b0b;
+  color: #35495e;
+  font-size: 30px;
   font-weight: bold;
   padding: 5px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 .submit:hover {
   background-color: #4f9da6;
-  color: white;
+  color: #fdfdf6;
 }
 
 .resultSection{
