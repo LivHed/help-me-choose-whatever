@@ -13,17 +13,18 @@ body {
   }
 
 h1 {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 50px;
-  letter-spacing: 2px;
+  line-height: 24px;
+  letter-spacing: 1px;
   margin-bottom: 0px;
-  color: indigo;
+  color: #35495e;
 
 }
 
 .inputSection {
   margin: 50px 0px 80px 0px;
-  width: 400px;
+  width: 420px;
 }
 
 .inputs {
@@ -34,20 +35,25 @@ h1 {
 
 input {
   margin-top: 10px;
-  padding: 3px;
+  padding-top: 3px;
+  padding-left:3px;
+  padding-right:3px;
   height: 22px;
-  font-size: medium;
+  font-size: 18px;
+  border: 1.5px solid darkslategrey;
+  border-radius: 2px;
+  background-color: #fdfdf6;
 }
 
 .addOption {
   margin-top: 10px;
-  background-color: #4baea0;
+  background-color: #127681;
   border-radius: 12px; 
-  color: #35495e;
+  color: #dfddc7;
   font-size: 20px;
   font-weight: bold;
   padding: 5px;
-  border-color: darkred;
+  border-color: darkslategrey;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
   -webkit-transition-duration: 0.4s;
@@ -61,10 +67,10 @@ input {
 }
 
 .submit {
-  background-color: #4baea0;
+  background-color: #127681;
   border-radius: 12px;
-  border-color: #9d0b0b;
-  color: #35495e;
+  border-color: darkslategrey;
+  color: #dfddc7;
   font-size: 30px;
   font-weight: bold;
   padding: 5px;
@@ -85,5 +91,5 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 35px;
+  font-size: 44px;
 }
