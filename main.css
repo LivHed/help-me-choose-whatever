@@ -1,7 +1,6 @@
 body {
   font-family: 'Sen', sans-serif;
   display: flex;
-/*  flex-direction: column;  */
   flex-direction: column;
   flex-flow: column wrap;
   justify-content: center;
@@ -13,6 +12,7 @@ body {
   height: 100%;
   }
 
+/*------- Header --------*/
 h1 {
   font-weight: 400;
   font-size: 60px;
@@ -27,6 +27,7 @@ h1 {
   flex-flow: row wrap;
 }
 
+/*------- Input section ------*/
 .inputSection {
   margin: 50px 5px 80px 5px;
   width: 100%;
@@ -36,14 +37,12 @@ h1 {
   flex-direction: column;
   flex-flow: column wrap;
 }
-}
 
 .inputs {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  flex-direction: row;
-  flex-flow: row wrap;
+  flex-direction: column;
+  flex-flow: column wrap;
 }
 
 input {
@@ -74,17 +73,19 @@ input {
   padding: 7px;
   border-color: darkslategrey;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
   cursor: pointer;
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
+
+  -webkit-transition-duration: 0.4s;
+  transition-duration: color 0.4s ease-in-out;
 }
 
 .addOption:hover {
   background-color: #4f9da6;
   color: #fdfdf6;
+  font-weight: 700;
 }
 
 .submit {
@@ -98,20 +99,21 @@ input {
   letter-spacing: 1px;
   padding: 7px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  display: flex;
+  justify-items: center;
 
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
-
-  display: flex;
-  justify-items: center;
 }
 
 .submit:hover {
   background-color: #4f9da6;
   color: #fdfdf6;
+  font-weight: 700;
 }
 
+/*---- Result section -----*/
 .resultSection{
   height: 300px;
   width: 100%;
@@ -125,29 +127,48 @@ input {
   text-shadow: 2px 2px 4px #fffbcc;
 }
 
+/*-------- Media queries ---------*/
 
 @media only screen and (min-width: 768px) {
-/* Tablet Styles */
+/*--------- Tablet Styles -----------*/
 
   input {
     width: 370px;
   }
 
+  .addOption {
+    margin-top: 22px;
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
- /* Ipad Pro styles */
+ /*------- Ipad Pro styles ---------*/
+  
+  h1 {
+    margin-top: 70px;
+  }
 
   input {
     width: 460px;
   }
-
+}
 
 @media only screen and (min-width: 1200px) {
-  /* Desktop styles */
+  /*--------- Desktop styles ---------*/
   
   body {
     margin-top: 80px;
   }
+
+  .addOption {
+    margin-top: 26px;
+  }
+
+  .submit {
+    font-size: 36px;
+    margin-top: 30px;
+  }
+  
 
 }
