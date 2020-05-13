@@ -7,4 +7,4 @@
 3. Click Go to see the result.
 4. You have been helped to choose! 
 
-### Made with HTML, CSS, Javascript. 5-day course at Tjejer kodar.
+### Mobile first, responsive website. Made with HTML, CSS, Javascript. 5-day course at Tjejer kodar.
