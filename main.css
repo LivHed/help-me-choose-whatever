@@ -1,11 +1,13 @@
 body {
   font-family: 'Sen', sans-serif;
   display: flex;
+/*  flex-direction: column;  */
   flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
-  margin-bottom: 250px;
+  margin-top: 40px;
+  margin-bottom: 80px;
   background: url(./images/background-image.jpg) no-repeat center center fixed #f1d6ab;
   background-size: cover;
   height: 100%;
@@ -18,17 +20,30 @@ h1 {
   margin-bottom: 0px;
   color: #35495e;
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .inputSection {
-  margin: 50px 0px 80px 0px;
-  width: 460px;
+  margin: 50px 5px 80px 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-flow: column wrap;
+}
 }
 
 .inputs {
-  width: inherit;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  flex-direction: row;
+  flex-flow: row wrap;
 }
 
 input {
@@ -43,6 +58,8 @@ input {
   background-color: #fdfdf6;
   letter-spacing: 1px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  display: flex;
+  justify-content: center;
 }
 
 .addOption {
@@ -61,6 +78,8 @@ input {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
 .addOption:hover {
@@ -83,6 +102,9 @@ input {
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
+
+  display: flex;
+  justify-items: center;
 }
 
 .submit:hover {
@@ -92,6 +114,7 @@ input {
 
 .resultSection{
   height: 300px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,4 +123,31 @@ input {
   color: #35495e;
   text-transform: uppercase;
   text-shadow: 2px 2px 4px #fffbcc;
+}
+
+
+@media only screen and (min-width: 768px) {
+/* Tablet Styles */
+
+  input {
+    width: 370px;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+ /* Ipad Pro styles */
+
+  input {
+    width: 460px;
+  }
+
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles */
+  
+  body {
+    margin-top: 80px;
+  }
+
 }
